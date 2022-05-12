@@ -3,24 +3,27 @@
 - 주어진 훈련 데이터는 augmentation을 통해 약 3배의 데이터로 증강시켰습니다.
 - Train/Validation 비율을 7/3으로 나눴습니다.
 - Pre-trained 되지 않은 YOLOv5s 모델을 사용했습니다.
-- 훈련을 마친 최종 모델의 크기는 14.4MB입니다.
+- 훈련을 마친 모델 best_weights.pt의 크기는 13.7MB입니다.
 - Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다.
 
 <br>
 
-# 실행방법 및 주의사항
+# 실행방법
+
+``` python
+# Install Dependencies
+cd yolov5
+pip install -r requirements.txt
+```
+
+<br>
 
 ``` python
 # Detection 실행코드
-!python detect.py --weights runs/train/yolov5s_results/weights/best.pt --img 416 --conf 0.4 --source /content/test/img
+python detect.py --weights ../best_weights.pt --img 416 --conf 0.4 --source ../dataset/test/img
 ```
 
-- 코드는 Google Colab을 통해 작성되었고, 순서대로 실행하시면 됩니다.
-- 훈련은 500 Epoch 기준, Colab GPU 환경에서 3시간 10분 정도의 시간이 소요됩니다.
-- test dataset의 detection 결과는 submission.zip 파일에 들어있습니다.
-- dataset.zip 파일을 repository에 업로드하려 했으나 50MB를 초과로 Warning 메시지가 떠 업로드하지 못했습니다.
-- 코드에서는 google drive mount를 통해 dataset을 다운받았습니다. dataset.zip파일은 메일로 같이 보내드리겠습니다.
-
+- test dataset의 detection 결과는 **yolov5/runs/detect/exp** 폴더에 들어있습니다.
 
 <br>
 
@@ -105,23 +108,23 @@ head:
 ```
 
 - YOLOv5s의 default 모델에서 number_of_classes(nc) 값만 변경하였습니다. 
-- 기존 모델은 80개의 클래스가 존재했지만, 본 모델에서는 다음 5개의 클래스만을 분류합니다.
+- 기존 모델은 80개의 클래스가 존재했지만, 커스텀한 모델에서는 다음 5개의 클래스만을 분류합니다.
 - [anger, neutral, sad, smile, suprise]
 
 
 <br>
 
 
-## Performance
+## Train and Validation
 
 | mAP | val_loss |
 |:-:|:-:|
 | ![12](https://user-images.githubusercontent.com/96368476/167996759-2095ef03-8c21-4ef5-9dce-ac9105260ca9.png) | ![13](https://user-images.githubusercontent.com/96368476/167996762-f9f81115-9f9f-44bd-91a0-2e1020636e07.png) |
 
 - 훈련은 총 500 epoch를 진행했습니다.
+- 500 Epoch 기준, Colab GPU 환경에서 3시간 10분 정도의 시간이 소요되었습니다.
 - train data에 대한 mAP 값은 0.95를 넘는 준수한 수준입니다.
-- 대략 400 epoch가 넘어가면 val_loss가 증가하는 것을 볼 수 있습니다.
-- 따라서 Detection에 사용되는 best-wights를 구하는데 500 epoch까지 할 필요는 없을듯합니다.
+- 대략 400 epoch가 넘어가면 val_loss가 증가하는 것을 볼 수 있었습니다.
 
 <br>
 
