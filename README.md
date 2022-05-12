@@ -10,7 +10,7 @@
 
 ## Repository 구조
 
-``` python
+``` 
 ├── Emotion_Recognition
     ├── README.md
     ├── dataset
