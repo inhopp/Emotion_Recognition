@@ -16,7 +16,7 @@
 - 코드는 Google Colab을 통해 작성되었고, 순서대로 실행하시면 됩니다.
 - 훈련은 500 Epoch 기준, Colab GPU 환경에서 3시간 10분 정도의 시간이 소요됩니다.
 - test dataset의 detection 결과는 submission.zip 파일에 들어있습니다.
-- dataset.zip 파일을 repository에 업로드하려 했으나, 50MB를 초과하여 Warning 메시지가 떴습니다.
+- dataset.zip 파일을 repository에 업로드하려 했으나, 50MB를 초과하여 Warning 메시지가 떠 업로드하지 못했습니다.
 - 코드에서는 google drive mount를 통해 dataset을 다운받았습니다. dataset.zip파일은 메일로 같이 보내드리겠습니다.
 
 
