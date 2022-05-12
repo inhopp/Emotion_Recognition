@@ -27,7 +27,7 @@
 
 가장 먼저 Object Detection SOTA model들을 살펴봤습니다. 아무래도 SOTA의 기준이 무게보다는 성능이기때문에 30MB 이하의 모델을 찾기가 쉽지 않았습니다.
 
-![11](https://user-images.githubusercontent.com/96368476/167912977-3aff2b7e-ea61-4d9e-82f9-61c4ef9cdc7a.png){: width="70%" height="80%" .align-center}
+![11](https://user-images.githubusercontent.com/96368476/167912977-3aff2b7e-ea61-4d9e-82f9-61c4ef9cdc7a.png)
 
 그러다 찾은 모델이 YOLOv5였습니다. YOLOv5는 모델의 무게, 성능에 따라 4단계로 나누어졌고 자료도 매우 풍부했습니다. 특히 YOLOv5s 버전은 30MB 이하이기 때문에 본 모델을 선택했습니다.
 
@@ -136,7 +136,7 @@ Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다
 
 | Example1 | Example2 | Example3 | Example4 |
 |:-:|:-:|:-:|:-:|
-| ![12](https://user-images.githubusercontent.com/96368476/168002839-7a9f40b9-dab9-436a-b5f1-6476f7919eb6.jpg) | ![13](https://user-images.githubusercontent.com/96368476/168002848-9e80db82-24fb-4424-8fa3-29a5b7d96567.jpg) | ![11](https://user-images.githubusercontent.com/96368476/168002903-20de7283-3df6-4fe2-929f-e09070c3eb02.jpg) | ![14](https://user-images.githubusercontent.com/96368476/168002907-9972cf73-cf5f-4880-99f6-c767be0cb30d.jpg) |
+| ![11](https://user-images.githubusercontent.com/96368476/168008730-8ce06cbd-35d2-4a06-bcf7-f51afb6a992c.jpg) | ![55](https://user-images.githubusercontent.com/96368476/168008740-375c091a-2223-4ba6-8bc1-e39cdeaa205e.JPG) | ![33](https://user-images.githubusercontent.com/96368476/168008866-cd0b7b48-f793-4d19-a837-59b0577efda8.jpg) | ![44](https://user-images.githubusercontent.com/96368476/168008871-447ffb13-7ca9-46ba-af4d-5a6a28c21e32.jpg) |
 
 
 
