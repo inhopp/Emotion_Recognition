@@ -24,6 +24,7 @@
 - `yolov5` : clone yolov5 repository
 - `best_weights.pt` : detection에 사용할 최종 모델
 - `Emotion_Recognition(Yolov5).ipynb` : 모델 커스텀, 훈련을 진행한 Colab 코드
+  - rendering 오류시 링크 : https://colab.research.google.com/drive/1t8AA72-ZZB44nh556QSv-IRxLpUnrYTs?usp=sharing
 - `detection_result` : test-set detection 결과
 
 <br>
