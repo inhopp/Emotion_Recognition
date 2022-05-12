@@ -23,7 +23,8 @@ pip install -r requirements.txt
 python detect.py --weights ../best_weights.pt --img 416 --conf 0.4 --source ../dataset/test/img
 ```
 
-- test dataset의 detection 결과는 **yolov5/runs/detect/exp** 폴더에 들어있습니다.
+- test dataset의 detection 결과는 **yolov5/runs/detect/exp** 폴더에 저장됩니다.
+- 미리 추출한 결과는 detection_result 폴더에 들어있습니다.
 
 <br>
 
@@ -122,7 +123,7 @@ head:
 | ![12](https://user-images.githubusercontent.com/96368476/167996759-2095ef03-8c21-4ef5-9dce-ac9105260ca9.png) | ![13](https://user-images.githubusercontent.com/96368476/167996762-f9f81115-9f9f-44bd-91a0-2e1020636e07.png) |
 
 - 훈련은 총 500 epoch를 진행했습니다.
-- 500 Epoch 기준, Colab GPU 환경에서 3시간 10분 정도의 시간이 소요되었습니다.
+- 500 epoch 기준, Colab GPU 환경에서 3시간 10분 정도의 시간이 소요되었습니다.
 - train data에 대한 mAP 값은 0.95를 넘는 준수한 수준입니다.
 - 대략 400 epoch가 넘어가면 val_loss가 증가하는 것을 볼 수 있었습니다.
 
