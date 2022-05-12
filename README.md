@@ -7,10 +7,32 @@
 
 <br>
 
-# 실행방법
+
+## Repository 구조
+
+``` python
+├── Emotion_Recognition
+    ├── README.md
+    ├── dataset
+    ├── yolov5
+    ├── best_weights.pt
+    ├── Emotion_Recognition(Yolov5).ipynb
+    └── detection_result
+```
+
+- `dataset` : train, val, test dataset
+- `yolov5` : clone yolov5 repository
+- `best_weights.pt` : detection에 사용할 최종 모델
+- `Emotion_Recognition(Yolov5).ipynb` : 모델 커스텀, 훈련을 진행한 Colab 코드
+- `detection_result` : test-set detection 결과
+
+<br>
+
+## 실행 방법
 
 ``` python
 # Install Dependencies
+git clone https://github.com/inhopp/Emotion_Recognition.git
 cd yolov5
 pip install -r requirements.txt
 ```
@@ -23,7 +45,6 @@ python detect.py --weights ../best_weights.pt --img 416 --conf 0.4 --source ../d
 ```
 
 - test dataset의 detection 결과는 **yolov5/runs/detect/exp** 폴더에 저장됩니다.
-- 미리 추출한 결과는 detection_result 폴더에 들어있습니다.
 
 <br>
 
