@@ -109,19 +109,12 @@ head:
 
 ## Performance
 
-### mAP
-
-![12](https://user-images.githubusercontent.com/96368476/167996759-2095ef03-8c21-4ef5-9dce-ac9105260ca9.png)
+| mAP | val_loss |
+|:-:|:-:|
+| ![12](https://user-images.githubusercontent.com/96368476/167996759-2095ef03-8c21-4ef5-9dce-ac9105260ca9.png) | ![13](https://user-images.githubusercontent.com/96368476/167996762-f9f81115-9f9f-44bd-91a0-2e1020636e07.png) |
 
 - 훈련은 총 500 epoch를 진행했습니다.
 - train data에 대한 mAP 값은 0.95를 넘는 준수한 수준입니다.
-
-<br>
-
-### val_loss
-
-![13](https://user-images.githubusercontent.com/96368476/167996762-f9f81115-9f9f-44bd-91a0-2e1020636e07.png)
-
 - 대략 400 epoch가 넘어가면 val_loss가 증가하는 것을 볼 수 있습니다.
 - 따라서 Detection에 사용되는 best-wights를 구하는데 500 epoch까지 할 필요는 없을듯합니다.
 
@@ -150,4 +143,4 @@ Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다
 |:-:|:-:|
 | ![23](https://user-images.githubusercontent.com/96368476/168003009-633f3097-9ac1-46c7-acfb-eabbd5c5ea69.jpg) | ![22](https://user-images.githubusercontent.com/96368476/168003022-a7dd6188-40c7-41d8-bb5c-63bb36735be9.jpg) |
 
-Detection 결과에서 한계라고 느꼈던 점은 흑인을 제대로 탐지하지 못한다는 것입니다. 흑인에 대한 train data가 부족하기 때문에 augmentation을 통해 해결해야 한다고 생각하지만, color 또한 object의 중요한 특징이라고 생각되기 때문에 섣불리 판단할 수 없었습니다. `
+Detection 결과에서 한계라고 느꼈던 점은 흑인을 제대로 탐지하지 못한다는 것입니다. 흑인에 대한 train data가 부족하기 때문에 augmentation을 통해 해결해야 한다고 생각하지만, color 또한 object의 중요한 특징이라고 생각되기 때문에 섣불리 판단하기 힘들었습니다.
