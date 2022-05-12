@@ -20,7 +20,6 @@
 - 코드에서는 google drive mount를 통해 dataset을 다운받았습니다. dataset.zip파일은 메일로 같이 보내드리겠습니다.
 
 
-
 <br>
 
 
@@ -148,3 +147,9 @@ Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다
 | ![23](https://user-images.githubusercontent.com/96368476/168003009-633f3097-9ac1-46c7-acfb-eabbd5c5ea69.jpg) | ![22](https://user-images.githubusercontent.com/96368476/168003022-a7dd6188-40c7-41d8-bb5c-63bb36735be9.jpg) |
 
 Detection 결과에서 한계라고 느꼈던 점은 흑인을 제대로 탐지하지 못한다는 것입니다. 흑인에 대한 train data가 부족하기 때문에 augmentation을 통해 해결해야 한다고 생각하지만, color 또한 object의 중요한 특징이라고 생각되기 때문에 섣불리 판단하기 힘들었습니다.
+
+<br>
+
+## Main Reference
+- https://github.com/ultralytics/yolov5
+- https://blog.roboflow.com/how-to-train-yolov5-on-a-custom-dataset/
