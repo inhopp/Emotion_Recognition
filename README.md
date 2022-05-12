@@ -4,7 +4,6 @@
 - Train/Validation 비율을 7/3으로 나눴습니다.
 - Pre-trained 되지 않은 YOLOv5s 모델을 사용했습니다.
 - 훈련을 마친 모델 best_weights.pt의 크기는 13.7MB입니다.
-- Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다.
 
 <br>
 
@@ -132,7 +131,7 @@ head:
 
 ### Detection 결과
 
-Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다.
+(Colab 환경에서)Image 한 장 기준 detection에 소요되는 시간은 0.01 ~ 0.04초입니다.
 
 <br>
 
